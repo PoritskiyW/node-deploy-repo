@@ -1,0 +1,50 @@
+@import './vars.scss';
+
+body{
+    background-color: $bg-color;
+}
+
+*{
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+a{
+    font-size: xx-large;
+    text-align: center;
+    color: $link-color;
+    &:hover{
+        color: $link-hover;
+    }
+}
+
+input[type=file]::-webkit-file-upload-button, button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    &:hover{
+        background-color: $bg-hover;
+    }
+    &:focus{
+        background-color: $bg-focus;
+    }
+}
+
+.section{
+    &__form{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        background-color: $bg-form;
+        padding: 10px;
+        border-radius: 7px;
+    }
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
