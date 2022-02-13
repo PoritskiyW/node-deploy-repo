@@ -8,7 +8,7 @@ function resolve(filepath, fileName) {
   return path.resolve(process.cwd(), 'src', filepath, fileName);
 }
 
-const isDevMode = /* process.env.DEV_STAGE !== "production" */ false;
+const isDevMode = process.env.DEV_STAGE !== 'production';
 
 module.exports = {
   mode: isDevMode ? 'development' : 'production',
