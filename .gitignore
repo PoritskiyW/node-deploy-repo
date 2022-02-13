@@ -190,5 +190,4 @@ dist
 .pnp.*
 
 .idea/
-*.lock
 packages/web/public
