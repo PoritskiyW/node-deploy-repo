@@ -2,7 +2,7 @@ export const envConfig = {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   port: Number.parseInt(process.env.PORT, 10),
-  host: process.env.ADRESS,
+  host: '0.0.0.0',
   region: process.env.REGION,
   accessKeyId: process.env.ACCESS_KEY_ID,
   bucketName: process.env.BUCKET_NAME,
