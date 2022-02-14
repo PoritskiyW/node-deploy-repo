@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "cd ./packages/web && yarn start && cd ./../server && yarn build && yarn start",
+    "build": "cd ./packages/web && yarn start && cd ./../server && yarn start",
     "start": "cd ./packages/server && yarn start"
   },
   "workspaces": [
