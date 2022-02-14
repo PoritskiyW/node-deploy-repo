@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn build:web && yarn build:server",
+    "start": "cd ./packages/server && yarn start",
     "build:server": "cd ./packages/server && yarn build",
     "build:web": "cd ./packages/web && yarn build"
   },
