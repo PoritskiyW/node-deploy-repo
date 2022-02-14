@@ -45,7 +45,6 @@ export class App {
   public run = () => {
     this.app.listen(this.port, this.host, () => {
       // eslint-disable-next-line no-console
-      const port = server.adress().port;
       console.log(`Server is ran on port ${this.port}`);
     });
   };
