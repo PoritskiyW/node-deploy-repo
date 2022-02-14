@@ -22,7 +22,7 @@ app.setRoute('/*', Methods.POST, (req, res) => {
     if (req.file) {
       const extension: string = req.file.originalname.split('.')[1].trim();
       if (!allowedFormats.includes(extension) || req.file.size > maxSize) {
-        res.status(200).end();
+        res.status(409).end();
       }
       if (imageFormats.includes(extension)) {
         const image = new File(req.file);
