@@ -10,6 +10,9 @@ const { allowedFormats, maxSize } = envConfig;
 const imageFormats = ['raw', 'jpg', 'tiff', 'psd', 'bmp', 'png', 'jp2'];
 
 app.setStatic(path.resolve(__dirname, '../../web/dist/'));
+app.setRoute('/', Methods.GET, (req, res) => {
+  res.sendfile(path.resolve(path.resolve(), 'static', 'index.html'));
+})
 app.setRoute('/*', Methods.POST, (req, res) => {
   const file = upload.single('file');
   file(req, res, (err) => {
