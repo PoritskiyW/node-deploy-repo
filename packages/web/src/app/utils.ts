@@ -1,5 +1,5 @@
 export function setResultUrls(data) {
-  if (data.keys.includes('file')) {
+  if (data.file) {
     const file = document.getElementById('file');
     file.setAttribute('href', data.file);
     file.innerText = 'File';
